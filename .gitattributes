@@ -1,0 +1,2 @@
+/trackfile/* filter=lfs diff=lfs merge=lfs -text
+/tracefile/* filter=lfs diff=lfs merge=lfs -text
