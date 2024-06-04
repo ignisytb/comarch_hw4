@@ -8,12 +8,12 @@ private:
     params parameter;
     cad* data;
 public:
-    L1(L2* upcache);
+    L1(int Cap, int Asso, int Bl_size);
     ~L1(){}
-    params cab(){
+    params cap(){
         return this->parameter;
     }
-    cad* caa(){
+    cad* cac(){
         return this->data;
     }
     bool Fetch(ll address);

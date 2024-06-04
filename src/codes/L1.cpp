@@ -1,15 +1,9 @@
 #include "../headers/L1.h"
 
-L1::L1(L2* upcache){
-    params upparams = upcache->cab();
-    this->parameter.cap = upparams.cap/4;
-    if (upparams.asso <= 2) {
-        this->parameter.asso = upparams.asso;
-    } else {
-        this->parameter.asso = upparams.asso/4;
-    }
-    this->parameter.asso = upparams.asso/4;
-    this->parameter.bl_size = upparams.bl_size;
+L1::L1(int Cap, int Asso, int Bl_size){
+    this->parameter.cap = Cap;
+    this->parameter.asso = Asso;
+    this->parameter.bl_size = Bl_size;
 
     this->data = cad_init(this->parameter);
 }

@@ -10,10 +10,10 @@ private:
 public:
     L2(int Cap, int Asso, int Bl_size);
     ~L2(){}
-    params cab(){
+    params cap(){
         return this->parameter;
     }
-    cad* caa(){
+    cad* cac(){
         return this->data;
     }
 };
