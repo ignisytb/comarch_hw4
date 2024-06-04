@@ -9,5 +9,6 @@ L1::L1(int Cap, int Asso, int Bl_size){
 }
 
 bool L1::Fetch(ll address){
-    
+    ll tmp = (address >> bit_cnt(this->parameter.bl_size)) & ~(0xFFFFFFFFFFFFFFFF << (64-this->parameter.bl_size));
+    cout << hex << tmp << endl;
 }

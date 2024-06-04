@@ -1,4 +1,6 @@
 #include <iostream>
+#include <math.h>
+#include <bitset>
 
 #ifndef structs
 #define structs
@@ -8,7 +10,6 @@ using namespace std;
 
 struct block {
     bool valid;
-    int bl_size;
     ll tag;
     ll addr;
 };
@@ -19,6 +20,7 @@ struct row {
 
 struct cad {
     int maxidx;
+    int bl_size;
     row* data;
 };
 
@@ -30,5 +32,6 @@ struct params {
 
 int bit_cnt(ll size);
 cad* cad_init(params pa);
+void cad_dest(cad* ca);
 
 #endif

@@ -9,7 +9,7 @@ private:
     cad* data;
 public:
     L1(int Cap, int Asso, int Bl_size);
-    ~L1(){}
+    ~L1(){};
     params cap(){
         return this->parameter;
     }

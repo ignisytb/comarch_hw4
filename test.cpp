@@ -1,15 +1,12 @@
 #include <iostream>
+#include <bitset>
 
 #define ll long long
 using namespace std;
 
 int main() {
-    ll a = 0x32;
-    for(int i=1;i<=sizeof(ll)*8;i++){
-        if ((bool) ((a >> (sizeof(ll)*8-i))&0x1)){
-            return sizeof(ll)*8-i;
-        }
-    }
+    ll a = 0xFFFFFFFFFFFFFFFF << 5;
+    cout << bitset<64>(~a) << endl;
 
     return 0;
 }
