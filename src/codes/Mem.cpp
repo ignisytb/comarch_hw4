@@ -13,8 +13,14 @@ Mem::Mem(int Cap, int Asso, int Bl_size) {
     this->c1 = c1;
 }
 
-bool Mem::Mem_Write(ll address){
+bool Mem::Mem_Read(ll address){
     if (this->c1->Fetch(address)){
+        return true;
+    }
+}
+
+bool Mem::Mem_Write(ll address){
+    if (this->c1->Write(address)){
         return true;
     }
 }

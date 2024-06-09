@@ -17,6 +17,7 @@ public:
         return this->data;
     }
     bool Fetch(ll address);
+    bool Write(ll address);
 };
 
 #endif

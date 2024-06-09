@@ -15,13 +15,13 @@ struct block {
 };
 
 struct row {
-    block* data;
+    block** data;
 };
 
 struct cad {
     int maxidx;
-    int bl_size;
-    row* data;
+    char bl_size;
+    row** data;
 };
 
 struct params {

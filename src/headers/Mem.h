@@ -11,6 +11,7 @@ private:
 public:
     Mem(int Cap, int Asso, int Bl_size);
     ~Mem(){};
+    bool Mem_Read(ll address);
     bool Mem_Write(ll address);
     cad* cac1(){return this->c1->cac();}
     cad* cac2(){return this->c2->cac();}
